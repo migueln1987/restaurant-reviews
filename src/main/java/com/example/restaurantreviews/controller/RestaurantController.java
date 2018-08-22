@@ -9,6 +9,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/restaurants")
+@CrossOrigin(origins = "*") //TODO change me!
 public class RestaurantController {
 
     private RestaurantRepository restaurantRepository;
