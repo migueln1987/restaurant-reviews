@@ -34,6 +34,12 @@ public class RestaurantController {
         return restaurant;
     }
 
+    @GetMapping("/{id}")
+    public Optional<Restaurant> getById(@PathVariable("id") String id) {
+        Optional<Restaurant> restaurant = restaurantRepository.findById(id);
+        return restaurant;
+    }
+
 
 
 }
